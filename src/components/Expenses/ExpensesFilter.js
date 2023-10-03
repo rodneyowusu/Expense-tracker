@@ -4,8 +4,10 @@ import './ExpensesFilter.css';
 
 const ExpensesFilter = (props) => {
     const dropdownChangeHandler = (event) => {
-        console.log(event.target.value)
+        // console.log(event.target.value)
         const selectedYear = event.target.value
+
+        
         //Passing Selected Year To Parent
         props.onGetYear(selectedYear)
 
